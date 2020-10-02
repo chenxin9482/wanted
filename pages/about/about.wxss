@@ -1,0 +1,4 @@
+/* pages/about/about.wxss */
+.content {
+  margin: 10rpx;
+}

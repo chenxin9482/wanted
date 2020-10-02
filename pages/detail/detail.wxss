@@ -1,0 +1,11 @@
+/* pages/detail/detail.wxss */
+.title {
+  font-weight: bold;
+  font-size: large;
+  display: flex;
+  justify-content: center;
+}
+
+.detail {
+  width: 100%;
+}

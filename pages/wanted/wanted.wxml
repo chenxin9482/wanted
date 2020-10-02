@@ -1,0 +1,10 @@
+<!--pages/wanted/wanted.wxml-->
+<view>
+  <view wx:for="{{roles}}" wx:key="index" wx:for-item="role" class="wanted-wrapper">
+    <image bindtap="showDetail" src="../../assets/img/{{role}}.jpg" mode="aspectFill" data-role="{{roles[index]}}">
+    </image>
+    <view class="name-wrapper">
+      <text class="title">{{role}}</text>
+    </view>
+  </view>
+</view>

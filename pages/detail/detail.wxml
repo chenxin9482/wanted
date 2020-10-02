@@ -1,0 +1,4 @@
+<!--pages/detail/detail.wxml-->
+<view>
+  <image src="{{href}}" mode="aspectFit" class="detail" style="height: {{height}}px"></image>
+</view>

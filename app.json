@@ -1,0 +1,29 @@
+{
+  "pages": [
+    "pages/wanted/wanted",
+    "pages/detail/detail",
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/about/about"
+  ],
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/wanted/wanted",
+        "text": "悬赏令"
+      },
+      {
+        "pagePath": "pages/about/about",
+        "text": "联系"
+      }
+    ]
+  },
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "Weixin",
+    "navigationBarTextStyle": "black"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}
