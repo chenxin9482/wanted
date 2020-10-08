@@ -1,4 +1,5 @@
 <!--pages/about/about.wxml-->
 <view class="content">
-  如有缺漏或数据更新，请发送邮件到cx5401@163.com反馈，谢谢合作
+  最全海贼王悬赏令展示，共有52名角色，如果你的更多的悬赏令、或者数据需要更新或错误、希望小程序添加新功能，请发送邮件到cx5401@163.com进行反馈，谢谢合作。
+  <image src="../../assets/pay.png" mode="aspectFill" style="margin-top:50rpx;"></image>
 </view>

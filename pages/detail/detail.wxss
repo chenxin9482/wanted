@@ -8,4 +8,5 @@
 
 .detail {
   width: 100%;
+  vertical-align: bottom
 }

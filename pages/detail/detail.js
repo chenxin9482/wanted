@@ -16,7 +16,7 @@ Page({
   onLoad: function (options) {
     this.setData({
       role: options.role,
-      href: `../../assets/img/${options.role}.jpg`,
+      href: `http://q.027cgb.com/633095/${options.role}.jpg`,
       height:  wx.getSystemInfoSync().windowHeight
     })
   },
