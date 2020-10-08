@@ -7,14 +7,20 @@
     "pages/about/about"
   ],
   "tabBar": {
+    "color": "#333333",
+    "selectedColor": "#4bbd51",
     "list": [
       {
         "pagePath": "pages/wanted/wanted",
-        "text": "悬赏令"
+        "text": "悬赏令",
+        "iconPath": "./assets/text_icon.png",
+        "selectedIconPath": "./assets/text_icon_actived.png"
       },
       {
         "pagePath": "pages/about/about",
-        "text": "联系"
+        "text": "联系",
+        "iconPath": "./assets/guanyu.png",
+        "selectedIconPath": "./assets/guanyu_actived.png"
       }
     ]
   },
