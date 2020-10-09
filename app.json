@@ -2,8 +2,6 @@
   "pages": [
     "pages/wanted/wanted",
     "pages/detail/detail",
-    "pages/index/index",
-    "pages/logs/logs",
     "pages/about/about"
   ],
   "tabBar": {

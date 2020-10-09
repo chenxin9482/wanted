@@ -1,10 +1,29 @@
 <!--pages/wanted/wanted.wxml-->
 <view>
-  <view wx:for="{{roles}}" wx:key="index" wx:for-item="role" class="wanted-wrapper">
-    <image bindtap="showDetail" lazy-load="true" src="http://q.027cgb.com/633095/{{role}}.jpg" mode="aspectFill" data-role="{{roles[index]}}">
-    </image>
-    <view class="name-wrapper">
-      <text class="title">{{role}}</text>
-    </view>
-  </view>
+	<view class="weui-search-bar">
+		<view class="weui-search-bar__form">
+			<!-- 最初始时的搜索框 -->
+			<view class="weui-search-bar__box" hidden="{{inputShowed}}">
+				<icon class="weui-icon-search_in-box" type="search" size="14"></icon>
+				<input focus="{{inputShowed}}" type="text" class="weui-search-bar__input" placeholder="搜索" value="{{searchText}}" bindconfirm="confirmSearch" />
+			</view>
+			<!-- 可编辑时的搜索框 -->
+			<view class="weui-search-bar__label" hidden="{{!inputShowed}}" bindtap="showInput">
+				<icon class="weui-icon-search" type="search" size="14"></icon>
+				<view class="weui-search-bar__text">搜索</view>
+			</view>
+		</view>
+		<!-- 取消搜索 -->
+		<view class="weui-search-bar__cancel-btn" hidden="{{inputShowed}}" bindtap="hideInput">取消</view>
+	</view>
+	<view wx:for="{{roles}}" wx:key="index" wx:for-item="role" class="wanted-wrapper">
+		<image bindtap="showDetail" lazy-load="true" src="http://q.027cgb.com/633095/{{role}}.jpg" mode="aspectFill" data-role="{{roles[index]}}">
+		</image>
+		<view class="name-wrapper">
+			<text class="title">{{role}}</text>
+		</view>
+	</view>
+	<view wx:if="{{roles.length == 0}}">
+		<text class="unfind">很抱歉，没有找到该角色</text>
+	</view>
 </view>
