@@ -16,6 +16,7 @@
 		<!-- 取消搜索 -->
 		<view class="weui-search-bar__cancel-btn" hidden="{{inputShowed}}" bindtap="hideInput">取消</view>
 	</view>
+	<view class="placeholder"></view>
 	<view wx:for="{{roles}}" wx:key="index" wx:for-item="role" class="wanted-wrapper">
 		<image bindtap="showDetail" lazy-load="true" src="http://q.027cgb.com/633095/{{role}}.jpg" mode="aspectFill" data-role="{{roles[index]}}">
 		</image>

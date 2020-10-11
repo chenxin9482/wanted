@@ -9,6 +9,10 @@
   margin: 25rpx 0;
 }
 
+.placeholder {
+  margin-top: 50rpx;
+}
+
 .wanted-wrapper image {
   height: 400rpx;
   vertical-align: bottom;
@@ -30,7 +34,11 @@
 }
 
 .weui-search-bar {
-  position: relative;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 88;
   padding: 8px 10px;
   display: -webkit-box;
   display: -webkit-flex;
@@ -97,7 +105,9 @@
   color: #09BB07;
   white-space: nowrap;
 }
+
 .unfind {
   display: flex;
   justify-content: center;
+  margin-top: 100rpx;
 }
