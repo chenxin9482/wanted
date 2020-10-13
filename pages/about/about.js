@@ -7,13 +7,16 @@ Page({
   data: {
 
   },
-
+  bindReward: function (e) {
+    wx.previewImage({
+      current: 'http://q.027cgb.com/633095/pay.png', // 当前显示图片的http链接
+      urls: ['http://q.027cgb.com/633095/pay.png'] // 需要预览的图片http链接列表
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */
-  onLoad: function (options) {
-
-  },
+  onLoad: function (options) {},
 
   /**
    * 生命周期函数--监听页面初次渲染完成
