@@ -9,8 +9,8 @@ Page({
   },
   bindReward: function (e) {
     wx.previewImage({
-      current: 'http://q.027cgb.com/633095/pay.png', // 当前显示图片的http链接
-      urls: ['http://q.027cgb.com/633095/pay.png'] // 需要预览的图片http链接列表
+      current: 'https://cdn.jsdelivr.net/gh/chenxin9482/tuchuang@main/pay.jpg', // 当前显示图片的http链接
+      urls: ['https://cdn.jsdelivr.net/gh/chenxin9482/tuchuang@main/pay.jpg'] // 需要预览的图片http链接列表
     })
   },
   /**

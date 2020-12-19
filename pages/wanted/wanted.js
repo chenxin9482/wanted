@@ -47,9 +47,13 @@ Page({
     });
   },
   showDetail: function (e) {
-    wx.navigateTo({
-      url: `../detail/detail?role=${e.target.dataset.role}`
+    wx.previewImage({
+      current: `https://cdn.jsdelivr.net/gh/chenxin9482/tuchuang@main/${e.target.dataset.role}.jpg`, // 当前显示图片的http链接
+      urls: [`https://cdn.jsdelivr.net/gh/chenxin9482/tuchuang@main/${e.target.dataset.role}.jpg`] // 需要预览的图片http链接列表
     })
+    // wx.navigateTo({
+    //   url: `../detail/detail?role=${e.target.dataset.role}`
+    // })
   },
   /**
    * 生命周期函数--监听页面加载
