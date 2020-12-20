@@ -18,7 +18,7 @@
 	</view>
 	<view class="placeholder"></view>
 	<view wx:for="{{roles}}" wx:key="index" wx:for-item="role" class="wanted-wrapper">
-		<image style="width:100%" bindtap="showDetail" lazy-load="true" src="https://cdn.jsdelivr.net/gh/chenxin9482/tuchuang@main/{{role}}.jpg" mode="aspectFill" data-role="{{roles[index]}}">
+		<image style="width:100%;height:490rpx" bindtap="showDetail" lazy-load="true" src="https://cdn.jsdelivr.net/gh/chenxin9482/tuchuang@main/{{role}}.jpg" mode="aspectFill" data-role="{{roles[index]}}">
 		</image>
 		<view class="name-wrapper">
 			<text class="title">{{role}}</text>
